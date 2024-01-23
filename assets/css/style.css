@@ -12,13 +12,14 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
-  background-size: cover;
+  background: #040404 url("../img/Laura-portada.webp") center left no-repeat;
+  background-size:cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
+  filter:saturate(0);
 
 }
 
@@ -27,6 +28,15 @@ body::before {
     background-attachment: fixed;
   }
 }
+@media (max-width: 1024px) {
+  body::before {
+    background: #040404  url("../img/bg-lau.webp") bottom center no-repeat;
+    background-size:cover;
+    filter:brightness(0.6) grayscale(100);
+
+  }
+}
+
 
 a {
   color: #18d26e;
